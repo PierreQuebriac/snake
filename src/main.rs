@@ -13,7 +13,7 @@ fn main() -> Result<()> {
     let mut terminal = tui::init()?;
     let app = app::App::new();
     loop {
-        terminal.draw(|f| ui::render_ui(f, &app));
+        terminal.draw(|f| ui::render_ui(f, &app))?;
         if should_quit()? {
             break;
         }
