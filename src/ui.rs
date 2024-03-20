@@ -18,7 +18,7 @@ pub fn render_ui(frame: &mut Frame, app: &App) {
         ])
         .split(frame.size());
 
-    let title = Paragraph::new(Text::styled(
+    let title = Paragraph::new(Line::styled(
         "Create New Json",
         Style::default().fg(Color::Green),
     ))
